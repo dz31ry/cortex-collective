@@ -125,7 +125,21 @@ Each venture built on CORTEX OS is conceived, architected, and grown by the same
 
 ---
 
-### 6. The AI-Native World
+### 6. The World is Changing — With or Without Us
+
+This isn't just about CORTEX OS. The world is entering a phase shift. Here's what's already happening:
+
+**AI agents are becoming autonomous.** Not chatbots — systems that can plan, execute multi-step tasks, use tools, and collaborate with other agents. Google's Project Mariner browses the web. Devin writes code across repositories. Jules solves GitHub issues autonomously. This is 2025-2026. By 2028, most knowledge work will involve agent orchestration.
+
+**Robots are leaving the factory floor.** Boston Dynamics' Atlas does backflips. Figure's humanoid robots work in BMW factories. Tesla's Optimus is being trained on real-world tasks. Chinese manufacturers are shipping humanoid robots for under $20,000. Within 5 years, robots will handle last-mile delivery, warehouse operations, elder care assistance, and construction tasks.
+
+**Drones are becoming infrastructure.** Zipline delivers medical supplies by drone across Rwanda and the US. Amazon's drone delivery is live. Agricultural drones monitor 100,000+ acres. Military drone swarms coordinate autonomously. The sky is becoming a logistics layer.
+
+**Edge AI is everywhere.** Your phone runs 7B parameter models locally. Smart glasses with AI vision are shipping. Every car, appliance, and sensor will run inference on-device. The "cloud" is becoming a backup, not the primary compute.
+
+**The question**: What happens when you connect all of this — autonomous AI agents + humanoid robots + drone fleets + edge devices — into a single coordinated system? That's what CORTEX OS is designed for. An organism, not an app.
+
+### 7. The AI-Native World
 
 Step back further. What does daily life look like in 10-20 years?
 
@@ -153,7 +167,7 @@ Step back further. What does daily life look like in 10-20 years?
 
 ---
 
-### 7. The Collective Itself
+### 8. The Collective Itself
 
 The Cortex Collective is coders + thinkers + AI agents. As it grows:
 
@@ -166,7 +180,7 @@ The Cortex Collective is coders + thinkers + AI agents. As it grows:
 
 ---
 
-### 8. The Risks
+### 9. The Risks
 
 Every system at scale faces risks. What should we be watching for?
 

@@ -94,43 +94,18 @@ git push origin my-contribution
 
 Use whatever AI tools you vibe with. The Collective is tool-agnostic.
 
-### Claude Code (Terminal)
+Each tool reads its own instruction file automatically:
 
-```bash
-cd cortex-collective
-claude
-# "Read venus/tasks/001-code-review-agent-prompt.md and solve it"
-```
+| Tool | Instruction File | How to Use |
+|------|-----------------|------------|
+| **Claude Code** | `CLAUDE.md` | `clone → cd → claude → "solve venus task 001"` |
+| **Cursor** | `.cursorrules` | `clone → cursor . → open task → AI assists` |
+| **Jules** | `.github/copilot-instructions.md` | `create issue → @jules solve this → review PR` |
+| **Gemini** | `GEMINI.md` | `paste GEMINI.md as context → upload task → write solution` |
+| **Windsurf / Copilot** | `.cursorrules` / `.github/copilot-instructions.md` | `open repo → AI assists → commit` |
+| **Your Brain** | `README.md` | **Whiteboard + paper before code. Always.** |
 
-### Cursor / Windsurf / Copilot (Editor)
-
-```bash
-cursor .
-# Open any task file → AI sidebar assists → commit when done
-```
-
-### Gemini (Research + Analysis)
-
-```
-Upload a brainstorming thread to Gemini
-→ Get architectural analysis
-→ Write your response document
-→ Submit via PR
-```
-
-### Jules (GitHub AI Agent)
-
-```
-1. Browse Issues → find a task labeled 'jules'
-2. Comment: @jules solve this
-3. Jules reads CLAUDE.md + task instructions
-4. Jules opens a PR with the solution
-5. Community reviews → maintainer merges
-```
-
-### Your Brain
-
-Still the most powerful tool. **Whiteboard + paper before code** — always.
+Every AI tool gets full context about CORTEX OS, the 6 principles, planet domains, and rules — automatically.
 
 ---
 

@@ -1,0 +1,32 @@
+# Cursor Rules — Cortex Collective
+
+You are working in the Cortex Collective repo — the open collaboration layer of CORTEX OS.
+
+## CORTEX OS Context
+
+CORTEX OS is an operating system for AI agent fleets. 1,140+ specialized agents across 18 planetary clusters (Mercury=Finance, Venus=Dev, Earth=Ops, Mars=Infra, Jupiter=Security, Saturn=Data, Uranus=R&D, Neptune=Compliance, Pluto=Audit, Ceres=Resources, Eris=Chaos, Orion=Federation, Haumea=Knowledge, Makemake=Edge, Sedna=DeepAI, Gonggong=Signals, Quaoar=Patterns, Orcus=RedTeam).
+
+Model-agnostic. Constitutionally governed by 6 principles:
+- Tabaqat (Layers) — hierarchical organization
+- Awtad (Anchors) — stability and recovery
+- Falak (Orbits) — isolation between domains
+- Mizan (Balance) — cost vs. quality gate
+- Ma' (Water) — collective knowledge
+- Zamzam (Well) — verified truth
+
+## Rules
+
+- Stay in the planet directory the task specifies
+- Never commit secrets, keys, passwords, or infrastructure details
+- Model-agnostic — prompts must work with any LLM
+- One task per PR, meet ALL acceptance criteria
+- Simple > clever — readable by someone who didn't write it
+- Reference the 6 principles where relevant
+
+## Repo Structure
+
+Each planet has `tasks/` (code) and `brainstorming/` (ideas). Read the full task file before starting. Every task has Context, Task, Deliverable, and Acceptance Criteria sections.
+
+## Agent Prompts
+
+When writing agent prompts: define identity, input format, output format, severity framework, and governing principle(s). Agents receive messages → process → produce structured output. Keep under word limits.
