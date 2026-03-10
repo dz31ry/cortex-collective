@@ -1,143 +1,259 @@
 # Cortex Collective
 
-**Coders and thinkers are the miners. Your contribution is your stake.**
+**Mine with code. Mine with ideas. Your contribution is your stake.**
+
+> Weekly puzzle pieces across 18 planetary clusters.
+> 15–30 minutes each. Use any AI tool. Every commit counts.
 
 ---
 
 ## What is CORTEX OS?
 
-An operating system for AI agent fleets. 1,140 specialized agents across 18 planetary clusters — each cluster owns a domain. They observe, analyze, decide, execute, and learn as one organism.
+An operating system for AI agent fleets. 1,140+ specialized agents across 18 planetary clusters — each cluster owns a domain (finance, security, dev, compliance, forensics...). They observe, analyze, decide, execute, and learn as one organism.
 
-Model-agnostic. Mathematically governed. Built for industries where hallucinations aren't an option.
+- **1,140+ agents** across 18 clusters
+- **Model-agnostic** — no vendor lock-in
+- **Mathematically governed** — the Mizan balance gate ensures quality
+- **Constitutional** — six Arabic-rooted principles govern every decision
 
-**The Cortex Collective** is the human layer. The agents need you.
+**The Cortex Collective** is the human + AI collaboration layer. The agents need you.
+
+---
+
+## Quick Start
+
+```bash
+git clone https://github.com/dz31ry/cortex-collective.git
+cd cortex-collective
+
+# Browse planets and pick your domain
+ls venus/tasks/          # Code tasks
+ls saturn/brainstorming/  # Strategy threads
+
+# Use your preferred AI tool
+claude                    # Claude Code — conversational
+cursor .                  # Cursor — AI-assisted editor
+# or just open in any editor
+
+# Solve → Commit → PR
+git checkout -b my-contribution
+# ... do the work ...
+git add . && git commit -m "venus: solve task 001"
+git push origin my-contribution
+# Open PR on GitHub
+```
 
 ---
 
 ## How It Works
 
+### Codework (Code Mining)
+
 ```
-1. Pick a planet          →  Choose a domain that fits your skills
-2. Grab a puzzle piece    →  Weekly tasks + brainstorming threads
-3. Use your stack         →  Claude Code, Cursor, Gemini, Jules — whatever you vibe with
-4. Submit a PR            →  AI governance reviews, community merges
-5. Your work lives on     →  Every commit is evaluated for the deAI network
+┌─────────────────────────────────────────────────────────┐
+│                    CODEWORK FLOW                        │
+│                                                         │
+│   Browse Tasks ──→ Pick Planet ──→ Clone Repo           │
+│        │                              │                 │
+│        ▼                              ▼                 │
+│   Read Task Brief          Use Your AI Tool             │
+│   (15-30 min scope)        (Claude/Cursor/Gemini/Jules) │
+│        │                              │                 │
+│        ▼                              ▼                 │
+│   Write Solution ◄────────── AI Assists You             │
+│        │                                                │
+│        ▼                                                │
+│   Open PR ──→ Review ──→ Merge ──→ deAI Evaluation      │
+└─────────────────────────────────────────────────────────┘
 ```
 
-**Time commitment**: 15–30 minutes per puzzle piece. Each task and brainstorming thread is scoped to be solvable in a single focused session.
+**Task types**: `agent-prompts` · `migrations` · `tools` · `daemons` · `frontend` · `infra` · `tests` · `docs`
+
+### Brainstorming (Idea Mining)
+
+```
+┌─────────────────────────────────────────────────────────┐
+│                  BRAINSTORMING FLOW                     │
+│                                                         │
+│   Browse Threads ──→ Pick Planet ──→ Read Context       │
+│        │                                │               │
+│        ▼                                ▼               │
+│   Think (15-30 min)            Reference Principles     │
+│        │                       (Tabaqat/Awtad/Falak/    │
+│        ▼                        Mizan/Ma'/Zamzam)       │
+│   Write Response ◄──────────────────────┘               │
+│        │                                                │
+│        ▼                                                │
+│   Submit via PR or Discussion ──→ deAI Evaluation       │
+└─────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## Your Stack
+## Vibe Coding Stack
 
-Use whatever AI tools you have. The Collective is tool-agnostic — just like CORTEX OS.
+Use whatever AI tools you vibe with. The Collective is tool-agnostic.
 
-| Tool | How to use it |
-|------|---------------|
-| **Jules** | Assign to any issue → Jules writes code → opens a PR |
-| **Claude Code** | Clone repo → `claude` in terminal → solve tasks conversationally |
-| **Cursor** | Open repo in Cursor → AI-assisted editing on any puzzle piece |
-| **Gemini** | Use Gemini Pro/Ultra for research, analysis, brainstorming |
-| **Windsurf / Copilot** | Works too — whatever gets the job done |
-| **Your brain** | Still the most powerful tool. Whiteboard + paper before code. |
-
-### Quick Start
+### Claude Code (Terminal)
 
 ```bash
-# Clone
-git clone https://github.com/dz31ry/cortex-collective.git
 cd cortex-collective
-
-# Pick a planet, check tasks
-ls venus/tasks/
-ls jupiter/brainstorming/
-
-# Use your AI tool of choice
-claude                          # Claude Code
-cursor .                        # Cursor
-# or just open in your editor
-
-# Solve, commit, push, PR
-git checkout -b my-contribution
-# ... do the work ...
-git add . && git commit -m "venus: solve puzzle piece XYZ"
-git push origin my-contribution
-# Open PR on GitHub
+claude
+# "Read venus/tasks/001-code-review-agent-prompt.md and solve it"
 ```
 
-### Jules Workflow
+### Cursor / Windsurf / Copilot (Editor)
+
+```bash
+cursor .
+# Open any task file → AI sidebar assists → commit when done
+```
+
+### Gemini (Research + Analysis)
 
 ```
-1. Browse Issues → find a task you want Jules to solve
+Upload a brainstorming thread to Gemini
+→ Get architectural analysis
+→ Write your response document
+→ Submit via PR
+```
+
+### Jules (GitHub AI Agent)
+
+```
+1. Browse Issues → find a task labeled 'jules'
 2. Comment: @jules solve this
-3. Jules reads the task + CLAUDE.md instructions
+3. Jules reads CLAUDE.md + task instructions
 4. Jules opens a PR with the solution
 5. Community reviews → maintainer merges
 ```
+
+### Your Brain
+
+Still the most powerful tool. **Whiteboard + paper before code** — always.
+
+---
+
+## The 18 Planets
+
+Each planet owns a domain. Pick the one that fits your skills.
+
+### Inner Planets (Core Operations)
+
+| Planet | Domain | You'll Work On |
+|--------|--------|----------------|
+| **Mercury** | Finance & Treasury | Billing logic, cost models, budget templates, efficiency metrics |
+| **Venus** | Software Dev | Code review prompts, dev tooling, static analysis configs |
+| **Earth** | Customer Ops | User workflows, onboarding flows, support automation |
+| **Mars** | Infra & DevOps | Deployment scripts, monitoring configs, CI templates |
+
+### Middle Planets (Specialized Systems)
+
+| Planet | Domain | You'll Work On |
+|--------|--------|----------------|
+| **Jupiter** | Security & Defense | Threat classification, access control rules, audit prompts |
+| **Saturn** | Data & Analytics | Data pipeline designs, reporting templates, OSINT tools |
+| **Uranus** | R&D & Innovation | Experimental architectures, proof-of-concepts, new patterns |
+| **Neptune** | Compliance | Regulatory checklists, governance docs, policy templates |
+
+### Outer Planets (Advanced Operations)
+
+| Planet | Domain | You'll Work On |
+|--------|--------|----------------|
+| **Pluto** | Shadow Audit | Forensics prompts, evidence chain templates, audit trails |
+| **Ceres** | Resources | Capacity planning models, resource allocation logic |
+| **Eris** | Chaos Engineering | Fault injection configs, resilience test plans |
+| **Orion** | Global Sync | Federation protocols, multi-instance coordination |
+
+### Kuiper Belt (Frontier)
+
+| Planet | Domain | You'll Work On |
+|--------|--------|----------------|
+| **Haumea** | Knowledge Synthesis | Knowledge graph schemas, cross-domain synthesis |
+| **Makemake** | Edge Fleet | Lightweight agent configs, IoT integration |
+| **Sedna** | Deep AI | Fine-tuning strategies, embedding pipelines, model evaluation |
+| **Gonggong** | Signal Processing | Anomaly detection rules, time-series analysis |
+| **Quaoar** | Pattern Recognition | Graph analysis configs, pattern matching logic |
+
+### Trans-Kuiper (Adversarial)
+
+| Planet | Domain | You'll Work On |
+|--------|--------|----------------|
+| **Orcus** | Red Team | Adversarial test cases, penetration testing prompts |
 
 ---
 
 ## Repo Structure
 
-18 planets. Each has two sections: **tasks** (code) and **brainstorming** (ideas).
-
 ```
-mercury/           Finance & Treasury
-venus/             Software Dev
-earth/             Customer Ops
-mars/              Infra & DevOps
-jupiter/           Security & Defense
-saturn/            Data & Analytics
-uranus/            R&D & Innovation
-neptune/           Compliance
-pluto/             Shadow Audit
-ceres/             Resources
-eris/              Chaos Engineering
-orion/             Global Sync
-haumea/            Knowledge Synthesis
-makemake/          Edge Fleet
-sedna/             Deep AI
-gonggong/          Signal Processing
-quaoar/            Pattern Recognition
-orcus/             Red Team
-```
-
-Each planet:
-```
-planet/
-  ├── tasks/            ← Codework: puzzle pieces to solve
-  └── brainstorming/    ← Strategy: ideas and architecture discussions
+cortex-collective/
+├── mercury/
+│   ├── tasks/              ← Codework puzzle pieces
+│   │   └── 001-cost-report-template.md
+│   ├── brainstorming/      ← Strategy discussions
+│   └── README.md           ← Planet overview
+├── venus/
+│   ├── tasks/
+│   │   └── 001-code-review-agent-prompt.md
+│   ├── brainstorming/
+│   └── README.md
+├── jupiter/
+│   ├── tasks/
+│   ├── brainstorming/
+│   └── README.md
+├── ... (18 planets total)
+├── CLAUDE.md               ← Instructions for AI agents
+└── README.md               ← You are here
 ```
 
 ---
 
 ## Six Guiding Principles
 
-Every contribution operates within these. Code or ideas — doesn't matter.
+Every contribution — code or ideas — operates within these principles.
 
-| | Name | Meaning |
-|---|------|---------|
-| الطبقات | **Tabaqat** | The Seven Layers — hierarchical organization |
-| الأوتاد | **Awtad** | The Anchors — stability, recovery, security |
-| الفلك | **Falak** | The Orbits — isolation and routing |
-| الميزان | **Mizan** | The Balance — cost control, quality gating |
-| الماء | **Ma'** | The Water — collective knowledge, learning |
-| زمزم | **Zamzam** | The Well — verified truth, quality scoring |
+| | Name | Meaning | Applied To |
+|---|------|---------|------------|
+| الطبقات | **Tabaqat** (Layers) | Hierarchical organization — 7 layers from hardware to consciousness | Architecture decisions, system design |
+| الأوتاد | **Awtad** (Anchors) | Stability, recovery, security — the pegs that hold the tent | Error handling, failsafes, rollback |
+| الفلك | **Falak** (Orbits) | Isolation and routing — each planet stays in its orbit | Domain boundaries, data flow |
+| الميزان | **Mizan** (Balance) | Cost control, quality gating — not too much, not too little | Code review thresholds, budget limits |
+| الماء | **Ma'** (Water) | Collective knowledge, learning — flowing and shared | Knowledge synthesis, documentation |
+| زمزم | **Zamzam** (Well) | Verified truth, quality scoring — the source must be pure | Data validation, source verification |
 
 ---
 
 ## Task Types
 
-| Tag | What |
-|-----|------|
-| `agent-prompts` | Agent behavior and reasoning prompts |
-| `migrations` | Schema evolution and data structures |
-| `tools` | Tool integrations for any planet |
-| `daemons` | Background automation and scheduling |
-| `frontend` | UI components and visualizations |
-| `infra` | Deployment and configuration |
-| `tests` | Automated testing |
-| `docs` | Architecture and operational docs |
+| Tag | What | Example |
+|-----|------|---------|
+| `agent-prompts` | Agent behavior and reasoning prompts | Write a code review agent system prompt |
+| `migrations` | Schema evolution and data structures | Design a billing ledger schema |
+| `tools` | Tool integrations for any planet | Build a SAST scanner config |
+| `daemons` | Background automation and scheduling | Design a log rotation schedule |
+| `frontend` | UI components and visualizations | Build a cluster health dashboard |
+| `infra` | Deployment and configuration | Write a monitoring alert template |
+| `tests` | Automated testing | Create edge-case test suites |
+| `docs` | Architecture and operational docs | Document a data flow diagram |
+
+---
+
+## Current Puzzle — Week 01
+
+### Codework
+
+| # | Planet | Task | Difficulty | Time |
+|---|--------|------|------------|------|
+| 001 | Venus | [Code Review Agent Prompt](venus/tasks/001-code-review-agent-prompt.md) | Starter | ~15 min |
+| 001 | Jupiter | [Threat Classification Prompt](jupiter/tasks/001-threat-classification-prompt.md) | Starter | ~20 min |
+| 001 | Mercury | [Cost Report Template](mercury/tasks/001-cost-report-template.md) | Starter | ~15 min |
+
+### Brainstorming
+
+| # | Planet | Topic | Time |
+|---|--------|-------|------|
+| 001 | Saturn | [Data Pipeline Architecture](saturn/brainstorming/001-data-pipeline-architecture.md) | ~15 min |
+| 001 | — | [How Will the Future Look?](brainstorming-001-the-future.md) | ~20 min |
 
 ---
 
@@ -145,17 +261,18 @@ Every contribution operates within these. Code or ideas — doesn't matter.
 
 1. **One task per PR** — don't bundle unrelated work
 2. **Stay in your planet** — if the task says `venus`, work in `venus/`
-3. **No secrets** — never commit keys, passwords, internal details
+3. **No secrets** — never commit keys, passwords, internal infrastructure details
 4. **Simple > clever** — code should be readable by someone who didn't write it
-5. **Commits matter** — all contributions are tracked for the deAI network
+5. **15–30 min scope** — each puzzle piece is designed for one focused session
+6. **Commits matter** — all contributions are tracked and evaluated for the deAI network
 
 ---
 
 ## Links
 
 - **Website**: [cortex-labs.xyz](https://cortex-labs.xyz)
-- **Collective**: [cortex-labs.xyz/collective](https://cortex-labs.xyz/collective)
-- **Discussions**: [github.com/dz31ry/cortex-collective/discussions](https://github.com/dz31ry/cortex-collective/discussions)
+- **Collective Page**: [cortex-labs.xyz/collective](https://cortex-labs.xyz/collective)
+- **Discussions**: [GitHub Discussions](https://github.com/dz31ry/cortex-collective/discussions)
 - **Email**: cortex-labs.xyz@proton.me
 - **Threema**: HN6UBSKS
 
