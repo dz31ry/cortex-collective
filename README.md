@@ -20,92 +20,111 @@ An operating system for AI agent fleets. 1,140+ specialized agents across 18 pla
 
 ---
 
-## Quick Start
+## How to Join
+
+### 1. Clone this repo
 
 ```bash
 git clone https://github.com/dz31ry/cortex-collective.git
 cd cortex-collective
+```
 
-# Browse planets and pick your domain
+This gives you the full planet structure, sample tasks, and context files. Use it as your local workbench with any AI tool you prefer.
+
+### 2. Browse and work locally
+
+Pick a planet that matches your skills. Open a task file. Work on it using Claude Code, Cursor, GPT, Gemini, or just your brain. The repo has instruction files for all major AI tools — they load automatically.
+
+```bash
 ls venus/tasks/          # Code tasks
 ls saturn/brainstorming/  # Strategy threads
-
-# Use your preferred AI tool
-claude                    # Claude Code — conversational
-cursor .                  # Cursor — AI-assisted editor
-# or just open in any editor
-
-# Solve → Commit → PR
-git checkout -b my-contribution
-# ... do the work ...
-git add . && git commit -m "venus: solve task 001"
-git push origin my-contribution
-# Open PR on GitHub
+claude                    # Claude Code reads CLAUDE.md automatically
+cursor .                  # Cursor reads .cursorrules automatically
 ```
+
+### 3. Get your DAI server access
+
+To submit work and collaborate with the BRAIN, email **cortex-labs@proton.me** with:
+- Your name
+- Your area of expertise
+- Which planet(s) interest you
+
+You'll receive credentials for one of our **decentralized AI servers**:
+- **Username + password** for your personal isolated terminal
+- **SSH access** (any terminal, any OS) or **browser terminal** (no install needed)
+
+```bash
+# SSH into your CORTEX terminal
+ssh -p YOUR_PORT worker@SERVER_IP
+
+# Or open the browser terminal URL we send you
+```
+
+### 4. Drop your work
+
+Inside your terminal on the DAI server, use the `drop` command to submit thoughts, completed work, decisions, and questions. The **BRAIN** (central intelligence) evaluates all contributions daily and responds in your personal briefing.
+
+```bash
+drop "your thought"                     # general thought
+drop task "build cost report template"  # task
+drop decision "use JSON not XML"        # decision
+drop question "how does Saturn ingest?" # question
+drop idea "real-time anomaly dashboard" # idea
+
+briefing    # read your daily response from the BRAIN
+```
+
+Your terminal is pre-configured with your role context. Any AI you run inside it automatically knows what you're working on.
 
 ---
 
-## How It Works
+## Secure Access with Hardware Keys (Optional)
+
+For enhanced security, we support **Nitrokey** hardware authentication. Your private SSH key lives on a physical device — even if your laptop is compromised, nobody can steal your key.
+
+| Model | Connector | Link |
+|-------|-----------|------|
+| Nitrokey 3A Mini | USB-A | https://shop.nitrokey.com/shop/nk3am-nitrokey-3a-mini-116 |
+| Nitrokey 3C NFC | USB-C + NFC | https://shop.nitrokey.com/shop/nk3cn-nitrokey-3c-nfc-148 |
+
+See [NITROKEY-SETUP.md](NITROKEY-SETUP.md) for the full setup guide (macOS, Windows, Linux).
+
+After setup, send your public key to **cortex-labs@proton.me** and we'll add it to your container. SSH with hardware key + PIN — no password needed.
+
+---
+
+## What Happens On The DAI Server
+
+When you SSH into your terminal on one of our decentralized AI servers, your AI assistant automatically gets:
+
+- **Your role context** — it knows your domain and what you're working on
+- **Today's briefing** — what happened since your last session
+- **Available tools** — `drop`, `thoughts`, `briefing`, `status`
+- **Your workspace** — domain-specific files and references
+
+You don't need to explain CORTEX to your AI. The context files do that automatically. Just start working.
+
+Your terminal is fully isolated — you can't access other collaborators' data, and they can't access yours. Only the BRAIN has visibility across all terminals.
+
+---
+
+## Sample Tasks
+
+Browse these to see the kind of work we need. The real tasks are in your terminal workspace.
 
 ### Codework (Code Mining)
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    CODEWORK FLOW                        │
-│                                                         │
-│   Browse Tasks ──→ Pick Planet ──→ Clone Repo           │
-│        │                              │                 │
-│        ▼                              ▼                 │
-│   Read Task Brief          Use Your AI Tool             │
-│   (15-30 min scope)        (Claude/Cursor/Gemini/Jules) │
-│        │                              │                 │
-│        ▼                              ▼                 │
-│   Write Solution ◄────────── AI Assists You             │
-│        │                                                │
-│        ▼                                                │
-│   Open PR ──→ Review ──→ Merge ──→ deAI Evaluation      │
-└─────────────────────────────────────────────────────────┘
-```
-
-**Task types**: `agent-prompts` · `migrations` · `tools` · `daemons` · `frontend` · `infra` · `tests` · `docs`
+| # | Planet | Task | Difficulty | Time |
+|---|--------|------|------------|------|
+| 001 | Venus | [Code Review Agent Prompt](venus/tasks/001-code-review-agent-prompt.md) | Starter | ~15 min |
+| 001 | Jupiter | Threat Classification Prompt | Starter | ~20 min |
+| 001 | Mercury | Cost Report Template | Starter | ~15 min |
 
 ### Brainstorming (Idea Mining)
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                  BRAINSTORMING FLOW                     │
-│                                                         │
-│   Browse Threads ──→ Pick Planet ──→ Read Context       │
-│        │                                │               │
-│        ▼                                ▼               │
-│   Think (15-30 min)            Reference Principles     │
-│        │                       (Tabaqat/Awtad/Falak/    │
-│        ▼                        Mizan/Ma'/Zamzam)       │
-│   Write Response ◄──────────────────────┘               │
-│        │                                                │
-│        ▼                                                │
-│   Submit via PR or Discussion ──→ deAI Evaluation       │
-└─────────────────────────────────────────────────────────┘
-```
-
----
-
-## Vibe Coding Stack
-
-Use whatever AI tools you vibe with. The Collective is tool-agnostic.
-
-Each tool reads its own instruction file automatically:
-
-| Tool | Instruction File | How to Use |
-|------|-----------------|------------|
-| **Claude Code** | `CLAUDE.md` | `clone → cd → claude → "solve venus task 001"` |
-| **Cursor** | `.cursorrules` | `clone → cursor . → open task → AI assists` |
-| **Jules** | `.github/copilot-instructions.md` | `create issue → @jules solve this → review PR` |
-| **Gemini** | `GEMINI.md` | `paste GEMINI.md as context → upload task → write solution` |
-| **Windsurf / Copilot** | `.cursorrules` / `.github/copilot-instructions.md` | `open repo → AI assists → commit` |
-| **Your Brain** | `README.md` | **Whiteboard + paper before code. Always.** |
-
-Every AI tool gets full context about CORTEX OS, the 6 principles, planet domains, and rules — automatically.
+| # | Topic | Time |
+|---|-------|------|
+| 001 | [How Will the Future Look?](brainstorming-001-the-future.md) | ~20 min |
 
 ---
 
@@ -158,31 +177,6 @@ Each planet owns a domain. Pick the one that fits your skills.
 
 ---
 
-## Repo Structure
-
-```
-cortex-collective/
-├── mercury/
-│   ├── tasks/              ← Codework puzzle pieces
-│   │   └── 001-cost-report-template.md
-│   ├── brainstorming/      ← Strategy discussions
-│   └── README.md           ← Planet overview
-├── venus/
-│   ├── tasks/
-│   │   └── 001-code-review-agent-prompt.md
-│   ├── brainstorming/
-│   └── README.md
-├── jupiter/
-│   ├── tasks/
-│   ├── brainstorming/
-│   └── README.md
-├── ... (18 planets total)
-├── CLAUDE.md               ← Instructions for AI agents
-└── README.md               ← You are here
-```
-
----
-
 ## Six Guiding Principles
 
 Every contribution — code or ideas — operates within these principles.
@@ -198,61 +192,42 @@ Every contribution — code or ideas — operates within these principles.
 
 ---
 
-## Task Types
+## AI Tools
 
-| Tag | What | Example |
-|-----|------|---------|
-| `agent-prompts` | Agent behavior and reasoning prompts | Write a code review agent system prompt |
-| `migrations` | Schema evolution and data structures | Design a billing ledger schema |
-| `tools` | Tool integrations for any planet | Build a SAST scanner config |
-| `daemons` | Background automation and scheduling | Design a log rotation schedule |
-| `frontend` | UI components and visualizations | Build a cluster health dashboard |
-| `infra` | Deployment and configuration | Write a monitoring alert template |
-| `tests` | Automated testing | Create edge-case test suites |
-| `docs` | Architecture and operational docs | Document a data flow diagram |
+Use whatever AI you vibe with. Works locally with this repo AND on the DAI server.
 
----
-
-## Current Puzzle — Week 01
-
-### Codework
-
-| # | Planet | Task | Difficulty | Time |
-|---|--------|------|------------|------|
-| 001 | Venus | [Code Review Agent Prompt](venus/tasks/001-code-review-agent-prompt.md) | Starter | ~15 min |
-| 001 | Jupiter | [Threat Classification Prompt](jupiter/tasks/001-threat-classification-prompt.md) | Starter | ~20 min |
-| 001 | Mercury | [Cost Report Template](mercury/tasks/001-cost-report-template.md) | Starter | ~15 min |
-
-### Brainstorming
-
-| # | Planet | Topic | Time |
-|---|--------|-------|------|
-| 001 | Saturn | [Data Pipeline Architecture](saturn/brainstorming/001-data-pipeline-architecture.md) | ~15 min |
-| 001 | — | [How Will the Future Look?](brainstorming-001-the-future.md) | ~20 min |
+| Tool | Locally (this repo) | On DAI Server |
+|------|---------------------|---------------|
+| **Claude Code** | `claude` — reads CLAUDE.md | `claude` — reads CLAUDE.md + your role context + briefing |
+| **Cursor** | `cursor .` — reads .cursorrules | SSH remote into your terminal |
+| **Gemini** | Paste `GEMINI.md` as context | Copy workspace context |
+| **ChatGPT / GPT** | Paste task file as context | Copy workspace context |
+| **Ollama** | Run locally | `sudo npm install -g ollama` on server |
+| **Your Brain** | Whiteboard + paper before code. Always. | Same. |
 
 ---
 
 ## Rules
 
-1. **One task per PR** — don't bundle unrelated work
-2. **Stay in your planet** — if the task says `venus`, work in `venus/`
-3. **No secrets** — never commit keys, passwords, internal infrastructure details
+1. **One task per drop** — keep contributions focused
+2. **Stay in your planet** — work within your assigned domain
+3. **No secrets** — never commit keys, passwords, or internal infrastructure details
 4. **Simple > clever** — code should be readable by someone who didn't write it
 5. **15–30 min scope** — each puzzle piece is designed for one focused session
-6. **Commits matter** — all contributions are tracked and evaluated for the deAI network
+6. **Drops matter** — all contributions are tracked and evaluated by the BRAIN
 
 ---
 
 ## Links
 
 - **Website**: [cortex-labs.xyz](https://cortex-labs.xyz)
-- **Collective Page**: [cortex-labs.xyz/collective](https://cortex-labs.xyz/collective)
+- **Email**: cortex-labs@proton.me
 - **Discussions**: [GitHub Discussions](https://github.com/dz31ry/cortex-collective/discussions)
-- **Email**: cortex-labs.xyz@proton.me
 - **Threema**: HN6UBSKS
+- **Nitrokey (hardware keys)**: [shop.nitrokey.com](https://shop.nitrokey.com)
 
 ---
 
-*All commits are evaluated for the decentralized AI network.*
+*All contributions are evaluated by the BRAIN. Your work shapes the network.*
 
 *2026 Cortex Labs — The Cortex Collective*
