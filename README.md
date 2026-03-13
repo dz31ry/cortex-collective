@@ -45,9 +45,10 @@ cursor .                  # Cursor reads .cursorrules automatically
 ### 3. Get your DAI server access
 
 To submit work and collaborate with the BRAIN, email **cortex-labs@proton.me** with:
-- Your name
-- Your area of expertise
-- Which planet(s) interest you
+- Who are you?
+- What do you do?
+- What have you done before?
+- Why do you want to join CORTEX?
 
 You'll receive credentials for one of our **decentralized AI servers**:
 - **Username + password** for your personal isolated terminal
