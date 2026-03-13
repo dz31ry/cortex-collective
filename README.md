@@ -196,14 +196,17 @@ Every contribution — code or ideas — operates within these principles.
 
 Use whatever AI you vibe with. Works locally with this repo AND on the DAI server.
 
-| Tool | Locally (this repo) | On DAI Server |
+| Tool | Locally (your clone/fork) | On DAI Server |
 |------|---------------------|---------------|
 | **Claude Code** | `claude` — reads CLAUDE.md | `claude` — reads CLAUDE.md + your role context + briefing |
 | **Cursor** | `cursor .` — reads .cursorrules | SSH remote into your terminal |
+| **Jules** | Fork this repo → assign Jules to your fork | Not available on DAI server |
 | **Gemini** | Paste `GEMINI.md` as context | Copy workspace context |
 | **ChatGPT / GPT** | Paste task file as context | Copy workspace context |
 | **Ollama** | Run locally | `sudo npm install -g ollama` on server |
 | **Your Brain** | Whiteboard + paper before code. Always. | Same. |
+
+> **Note on Jules**: Jules (Google's AI agent) cannot work directly on this repository — it requires write access. Fork or clone the repo to your own GitHub account first, then point Jules at your fork. Submit your work back via pull request.
 
 ---
 

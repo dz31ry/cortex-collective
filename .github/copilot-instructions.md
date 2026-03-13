@@ -1,6 +1,8 @@
 # Copilot / Jules Instructions — Cortex Collective
 
-> Jules: Read this + the task file completely before writing any code.
+> **Jules users**: This file only works if you forked or cloned this repo to your own GitHub account. Jules cannot operate directly on the original repository. After solving a task, submit your work via pull request.
+
+> Read this + the task file completely before writing any code.
 
 ## What You're Working On
 
