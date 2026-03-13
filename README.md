@@ -3,7 +3,7 @@
 **Mine with code. Mine with ideas. Your contribution is your stake.**
 
 > Weekly puzzle pieces across 18 planetary clusters.
-> 15–30 minutes each. Use any AI tool. Every commit counts.
+> 15–30 minutes each. Use any AI tool. Every drop counts.
 
 ---
 
@@ -44,7 +44,7 @@ cursor .                  # Cursor reads .cursorrules automatically
 
 ### 3. Get your DAI server access
 
-To submit work and collaborate with the BRAIN, email **cortex-labs@proton.me** with:
+To submit work and collaborate with the BRAIN, email **cortex-labs.xyz@proton.me** with:
 - Who are you?
 - What do you do?
 - What have you done before?
@@ -90,7 +90,7 @@ For enhanced security, we support **Nitrokey** hardware authentication. Your pri
 
 See [NITROKEY-SETUP.md](NITROKEY-SETUP.md) for the full setup guide (macOS, Windows, Linux).
 
-After setup, send your public key to **cortex-labs@proton.me** and we'll add it to your container. SSH with hardware key + PIN — no password needed.
+After setup, send your public key to **cortex-labs.xyz@proton.me** and we'll add it to your container. SSH with hardware key + PIN — no password needed.
 
 ---
 
@@ -118,8 +118,8 @@ Browse these to see the kind of work we need. The real tasks are in your termina
 | # | Planet | Task | Difficulty | Time |
 |---|--------|------|------------|------|
 | 001 | Venus | [Code Review Agent Prompt](venus/tasks/001-code-review-agent-prompt.md) | Starter | ~15 min |
-| 001 | Jupiter | Threat Classification Prompt | Starter | ~20 min |
-| 001 | Mercury | Cost Report Template | Starter | ~15 min |
+| 001 | Jupiter | [Threat Classification Prompt](jupiter/tasks/001-threat-classification-prompt.md) | Starter | ~20 min |
+| 001 | Mercury | [Cost Report Template](mercury/tasks/001-cost-report-template.md) | Starter | ~15 min |
 
 ### Brainstorming (Idea Mining)
 
@@ -225,7 +225,7 @@ Use whatever AI you vibe with. Works locally with this repo AND on the DAI serve
 ## Links
 
 - **Website**: [cortex-labs.xyz](https://cortex-labs.xyz)
-- **Email**: cortex-labs@proton.me
+- **Email**: cortex-labs.xyz@proton.me
 - **Discussions**: [GitHub Discussions](https://github.com/dz31ry/cortex-collective/discussions)
 - **Threema**: HN6UBSKS
 - **Nitrokey (hardware keys)**: [shop.nitrokey.com](https://shop.nitrokey.com)

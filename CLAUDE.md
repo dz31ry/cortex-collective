@@ -92,6 +92,6 @@ Agent prompts should:
 
 This repo is a **local workbench** — clone it for the planet structure, sample tasks, and AI instruction files. The real collaboration happens on our **decentralized AI servers (DAI)**.
 
-To get access: email **cortex-labs@proton.me** with your name, expertise, and which planet(s) interest you. You'll receive a username, password, and SSH access to your own isolated terminal. From there, use the `drop` command to submit your work — the BRAIN evaluates all contributions daily.
+To get access: email **cortex-labs.xyz@proton.me** with your name, expertise, and which planet(s) interest you. You'll receive a username, password, and SSH access to your own isolated terminal. From there, use the `drop` command to submit your work — the BRAIN evaluates all contributions daily.
 
 For hardware-backed SSH authentication (optional), see [NITROKEY-SETUP.md](NITROKEY-SETUP.md).

@@ -226,7 +226,7 @@ gpgconf --launch gpg-agent
 
 ## After Setup
 
-Send your SSH public key (from step 8) to **cortex-labs@proton.me** or to Tarek directly via WhatsApp or Signal. He will add it to your CORTEX container. After that, SSH works with your Nitrokey — no password needed.
+Send your SSH public key (from step 8) to **cortex-labs.xyz@proton.me** or to Tarek directly via WhatsApp or Signal. He will add it to your CORTEX container. After that, SSH works with your Nitrokey — no password needed.
 
 **How it works**: Private key never leaves the Nitrokey. Every SSH connection requires the physical device plugged in + your PIN. Even if your laptop is compromised, nobody can steal the key.
 
@@ -239,7 +239,7 @@ Send your SSH public key (from step 8) to **cortex-labs@proton.me** or to Tarek 
 | `No card` | Plug in Nitrokey, run `gpg --card-status` |
 | `PIN blocked` | Use admin PIN to unblock: `gpg --card-edit` → `admin` → `passwd` → option `2` |
 | `ssh: no identity` | Check `ssh-add -l` — should show the Nitrokey key. If empty: `export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)` |
-| `Permission denied` | Your public key hasn't been added to the container yet — email cortex-labs@proton.me |
+| `Permission denied` | Your public key hasn't been added to the container yet — email cortex-labs.xyz@proton.me |
 | PIN popup doesn't appear | macOS: check `pinentry-mac` is installed. Linux: check `gpg-agent` is running |
 
 ---
