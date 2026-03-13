@@ -19,7 +19,7 @@ Model-agnostic. Constitutionally governed by 6 principles:
 - Stay in the planet directory the task specifies
 - Never commit secrets, keys, passwords, or infrastructure details
 - Model-agnostic — prompts must work with any LLM
-- One task per PR, meet ALL acceptance criteria
+- One task per drop — keep contributions focused
 - Simple > clever — readable by someone who didn't write it
 - Reference the 6 principles where relevant
 

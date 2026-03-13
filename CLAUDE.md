@@ -42,7 +42,7 @@ These are non-negotiable. Reference them in your work.
 2. **No secrets** — never commit API keys, passwords, internal IPs, or infrastructure details
 3. **Follow the six principles** — reference them explicitly in your work
 4. **Simple > clever** — code should be maintainable by humans who didn't write it
-5. **One task per PR** — don't bundle unrelated changes
+5. **One task per drop** — keep contributions focused
 6. **Tests matter** — if you write code, write tests
 7. **Model-agnostic** — never write prompts or code that only works with one LLM
 8. **Read the full task** — every task has Context, Task, Deliverable, and Acceptance Criteria. Meet ALL criteria.
@@ -88,14 +88,10 @@ Agent prompts should:
 - Reference which principle(s) govern this agent's decisions
 - Be under 500 words unless the task specifies otherwise
 
-## How to Submit
+## How This Repo Works
 
-```bash
-git clone https://github.com/dz31ry/cortex-collective.git
-cd cortex-collective
-git checkout -b your-branch-name
-# ... do the work ...
-git add . && git commit -m "planet: solve task NNN"
-git push origin your-branch-name
-# Open PR on GitHub
-```
+This repo is a **local workbench** — clone it for the planet structure, sample tasks, and AI instruction files. The real collaboration happens on our **decentralized AI servers (DAI)**.
+
+To get access: email **cortex-labs@proton.me** with your name, expertise, and which planet(s) interest you. You'll receive a username, password, and SSH access to your own isolated terminal. From there, use the `drop` command to submit your work — the BRAIN evaluates all contributions daily.
+
+For hardware-backed SSH authentication (optional), see [NITROKEY-SETUP.md](NITROKEY-SETUP.md).
