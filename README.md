@@ -200,7 +200,7 @@ Use whatever AI you vibe with. Works locally with this repo AND on the DAI serve
 |------|---------------------|---------------|
 | **Claude Code** | `claude` — reads CLAUDE.md | `claude` — reads CLAUDE.md + your role context + briefing |
 | **Cursor** | `cursor .` — reads .cursorrules | SSH remote into your terminal |
-| **Jules** | Fork this repo → assign Jules to your fork | Not available on DAI server |
+| **Jules** | Fork repo → assign Jules → reads [JULES.md](JULES.md) | Not available on DAI server |
 | **Gemini** | Paste `GEMINI.md` as context | Copy workspace context |
 | **ChatGPT / GPT** | Paste task file as context | Copy workspace context |
 | **Ollama** | Run locally | `sudo npm install -g ollama` on server |
